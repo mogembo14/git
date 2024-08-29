@@ -34,7 +34,7 @@ pipeline {
         }
         stage('Deployment') {
             steps {
-                echo 'The software is deployed'
+                echo 'The software is being deployed'
             }
         }
     }
