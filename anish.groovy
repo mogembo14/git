@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'Hello Prem'
+                echo 'Hello Anish'
             }
         }
         stage('Hey') {
             steps {
-                echo 'Hey Prem'
+                echo 'Hey Anish'
             }
         }
         stage('Info') {
@@ -34,7 +34,7 @@ pipeline {
         }
         stage('Deployment') {
             steps {
-                echo 'This software will be deployed on my birthday!'
+                echo 'The software is deployed'
             }
         }
     }
