@@ -23,7 +23,7 @@ pipeline {
             }
         }
         stage('Build') {
-            steps {
+            
                 import java.io.*;
     import java.util.Scanner;
 
@@ -44,7 +44,7 @@ pipeline {
       System.out.println("Reversed word: "+ nstr);
     }
 }
-            }
+            
         }
         stage('Test') {
             steps {
