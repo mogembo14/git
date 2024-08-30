@@ -23,29 +23,13 @@ pipeline {
             }
         }
         stage('Build') {
-            
-                import java.io.*;
-    import java.util.Scanner;
-
-    class GFG {
-    public static void main (String[] args) {
-      
-        String str= "Geeks", nstr="";
-        char ch;
-      
-      System.out.print("Original word: ");
-      System.out.println("Geeks"); //Example word
-      
-      for (int i=0; i<str.length(); i++)
-      {
-        ch= str.charAt(i); //extracts each character
-        nstr= ch+nstr; //adds each character in front of the existing string
-      }
-      System.out.println("Reversed word: "+ nstr);
-    }
-}
-            
-        }
+            steps {
+                int x = 5;
+int y = 6;
+int sum = x + y;
+System.out.println(sum);
+            }
+                
         stage('Test') {
             steps {
                 echo 'This is the testing stage of the software.'
